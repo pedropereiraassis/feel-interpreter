@@ -1,0 +1,15 @@
+{
+  "name": "feel-interpreter",
+  "version": "1.0.0",
+  "description": "An interpreter for FEEL language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "FEEL",
+    "interpreter"
+  ],
+  "author": "Pedro Assis",
+  "license": "ISC"
+}
