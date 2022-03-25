@@ -2,9 +2,13 @@
   "name": "feel-interpreter",
   "version": "1.0.0",
   "description": "An interpreter for FEEL language",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedropereiraassis/feel-interpreter.git"
   },
   "keywords": [
     "FEEL",
