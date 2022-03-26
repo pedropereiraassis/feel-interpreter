@@ -13,4 +13,5 @@ Dish==Dish and Steak==Steak
 Dish==Dish and Steak==Steak and Soda==Soda
 Dish==Dish or Steak==Steak
 Dish==Dish or Steak==Steak or Soda==Soda
+If Car==Car then Car else Bike
 ```

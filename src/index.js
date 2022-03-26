@@ -29,6 +29,18 @@ function valueInArray(expression) {
 
 }
 
+function conditional(expression) {
+
+  let sentence = expression.split(" ")[1].split('==');
+  let value1 = expression.split(" ")[3];
+  let value2 = expression.split(" ")[5];
+  if(sentence[0] == sentence[1]) {
+    return value1;
+  } else {
+    return value2;
+  }
+}
+
 function stringComparison(expression) {
 
   let firstSentence = expression.split(" ")[0].split('==');
@@ -118,5 +130,6 @@ module.exports = {
   tripleAndComparison,
   doubleOrComparison,
   tripleOrComparison,
-  stringComparison
+  stringComparison,
+  conditional
 }
