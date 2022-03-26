@@ -29,12 +29,23 @@ function valueInArray(expression) {
 
 }
 
+function stringComparison(expression) {
+
+  let firstSentence = expression.split(" ")[0].split('==');
+  if(firstSentence[0] == firstSentence[1]) {
+    return true;
+  } else {
+  return false;
+  }
+
+}
+
 function doubleAndComparison(expression) {
 
-  let firstSentence = expression.split(" ")[0].split(':');
+  let firstSentence = expression.split(" ")[0].split('==');
   let firstResult = firstSentence[0] == firstSentence[1];
   
-  let secondSentence = expression.split(" ")[2].split(':');
+  let secondSentence = expression.split(" ")[2].split('==');
   let secondResult = secondSentence[0] == secondSentence[1];
   
   if(firstResult && secondResult) {
@@ -47,13 +58,13 @@ function doubleAndComparison(expression) {
 
 function tripleAndComparison(expression) {
 
-  let firstSentence = expression.split(" ")[0].split(':');
+  let firstSentence = expression.split(" ")[0].split('==');
   let firstResult = firstSentence[0] == firstSentence[1];
   
-  let secondSentence = expression.split(" ")[2].split(':');
+  let secondSentence = expression.split(" ")[2].split('==');
   let secondResult = secondSentence[0] == secondSentence[1];
   
-  let thirdSentence = expression.split(" ")[4].split(':');
+  let thirdSentence = expression.split(" ")[4].split('==');
   let thirdResult = thirdSentence[0] == thirdSentence[1];
   
   if(firstResult && secondResult && thirdResult) {
@@ -66,10 +77,10 @@ function tripleAndComparison(expression) {
 
 function doubleOrComparison(expression) {
 
-  let firstSentence = expression.split(" ")[0].split(':');
+  let firstSentence = expression.split(" ")[0].split('==');
   let firstResult = firstSentence[0] == firstSentence[1];
 
-  let secondSentence = expression.split(" ")[2].split(':');
+  let secondSentence = expression.split(" ")[2].split('==');
   let secondResult = secondSentence[0] == secondSentence[1];
   
   if(firstResult || secondResult) {
@@ -82,13 +93,13 @@ function doubleOrComparison(expression) {
 
 function tripleOrComparison(expression) {
 
-  let firstSentence = expression.split(" ")[0].split(':');
+  let firstSentence = expression.split(" ")[0].split('==');
   let firstResult = firstSentence[0] == firstSentence[1];
   
-  let secondSentence = expression.split(" ")[2].split(':');
+  let secondSentence = expression.split(" ")[2].split('==');
   let secondResult = secondSentence[0] == secondSentence[1];
   
-  let thirdSentence = expression.split(" ")[4].split(':');
+  let thirdSentence = expression.split(" ")[4].split('==');
   let thirdResult = thirdSentence[0] == thirdSentence[1];
   
   if(firstResult || secondResult || thirdResult) {
@@ -106,5 +117,6 @@ module.exports = {
   doubleAndComparison,
   tripleAndComparison,
   doubleOrComparison,
-  tripleOrComparison
+  tripleOrComparison,
+  stringComparison
 }
