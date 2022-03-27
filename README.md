@@ -9,7 +9,7 @@ $ npm install feel-interpreter
 ```
 ## Example Usage
 
-```
+```js
 const { convertExpression } = require("feel-interpreter");
 
 const numberComparison = convertExpression("124 in (>=124)");
@@ -25,7 +25,7 @@ console.log(nameInList);
 
 ## Valid FEEL expressions (for now)
 
-```
+```json
 5 in (<=5)
 5 in (>=5)
 8++
