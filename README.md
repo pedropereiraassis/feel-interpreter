@@ -1,7 +1,29 @@
 # feel-interpreter
-An interpreter for FEEL language
+feel-interpreter, like the name tells, is an interpreter of FEEL (Friendly Enough Expression Language) language. It works converting the expression written in FEEL into decision logics to return what is expected. FEEL is an expression language based on DMN specification and is a very powerful language built with the purpose of defining rules in Business Rule Engines.
 
-## FEEL expressions
+## Installation
+Installation is done using the npm install command:
+
+```
+$ npm install feel-interpreter
+```
+## Example Usage
+
+```
+const { convertExpression } = require("feel-interpreter");
+
+const numberComparison = convertExpression("124 in (>=124)");
+
+console.log(numberComparison);
+// the output will be: true
+
+const nameInList = convertExpression("Alice in ['Arthur', 'Brad', 'John']");
+
+console.log(nameInList);
+// the output will be: false
+```
+
+## Valid FEEL expressions (for now)
 
 ```
 5 in (<=5)
