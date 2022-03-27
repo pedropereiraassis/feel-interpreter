@@ -25,7 +25,7 @@ console.log(nameInList);
 
 ## Valid FEEL expressions (for now)
 
-```json
+```
 5 in (<=5)
 5 in (>=5)
 8++
